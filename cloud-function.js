@@ -5,7 +5,8 @@
  * @param {!express:Response} res HTTP response context.
  */
 exports.helloWorld = (req, res) => {
+    const name = 'Prashant Pandey'
     let message = req.query.keyword || req.body.keyword || null;
-    message = message === null ? 'No Keyword Sent' : 'Prashant Pandey says ' + message;
+    message = message === null ? 'No Keyword Sent' : name + ' says ' + message;
     res.status(200).send(message);
 };
