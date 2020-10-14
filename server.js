@@ -13,4 +13,8 @@ app.get('/', async (req, res) => {
         res.send(error);
     }
 
+});
+
+app.listen(3000, ()=>{
+    console.log('Yay! server started');
 })
